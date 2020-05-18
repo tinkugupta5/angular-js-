@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angular js tutorial</title>
+    <link rel="stylesheet" href="style.css">
     <script src="\script\angular.min.js"></script>
+    <script src="script\bootstrap.min.js"></script>
+<link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body ng-app>
+    
+    <div ng-init="employees=[
+    
+    {name:'john', dob:'23'},
+    {name:'aman', dob:'23'},
+    {name:'david', dob:'23'},
+    {name:'suzi', dob:'23'}
+    
+    ]">
 
-    <div>
-
-        10+20 = {{1==20}}
     </div>
 
-
-    <div>
-        
-        10+20 = {{30+40}}
-    </div>
-
+    <ul ng-repeat="employe in employees"><li>
+{{employe.name}}
+    </li></ul>
 
 
 
